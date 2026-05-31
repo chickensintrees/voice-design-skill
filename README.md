@@ -11,6 +11,7 @@ The one-line version: **the prompt is the instrument.** You don't pick a voice f
 - **[`SKILL.md`](SKILL.md)** — the skill itself. The Gold Workflow, the parameter rules, the words that kill voices and the words that give them life. This is the thing you install.
 - **[`examples/design_voice.py`](examples/design_voice.py)** — a self-contained, dependency-free reference implementation. Generates candidates, writes reproducibility sidecars, and saves a winner. Edit two strings and run it.
 - **[`examples/news-anchor.md`](examples/news-anchor.md)** — a fully worked SCENE + audition-text example (female news anchor, studio), including tonal variations and the trap to avoid.
+- **[`presets/`](presets/)** — ready-to-run voice presets as JSON, each with a proven seed. Reproducible on any machine: `python3 examples/design_voice.py --preset presets/<name>.json`.
 
 ## Quick start (the script)
 
@@ -54,6 +55,25 @@ cp SKILL.md .cursor/rules/voice-design.md
 ```
 
 Then ask Cursor's agent to design a voice; it will pull the rule into context.
+
+## Presets
+
+Each file in [`presets/`](presets/) is a complete, tested recipe — scene prompt, mundane
+audition text, the proven seed, and the standard settings. Run one directly:
+
+```bash
+python3 examples/design_voice.py --preset presets/news-anchor.json
+# pin to the proven seed for the known-good voice:
+python3 examples/design_voice.py --preset presets/news-anchor.json --seeds 8160
+```
+
+| Preset | Voice | Proven seed |
+|--------|-------|-------------|
+| [`news-anchor.json`](presets/news-anchor.json) | Female network news anchor, studio | `8160` |
+
+A preset stores everything needed to reproduce the voice **except** the
+`generated_voice_id` — that changes per call and is tied to your ElevenLabs account, so
+the portable fingerprint is the seed. Drop a new JSON in `presets/` to add your own.
 
 ## The short version of the method
 

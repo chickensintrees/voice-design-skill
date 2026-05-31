@@ -1,0 +1,18 @@
+{
+  "preset_name": "News Anchor (Studio) — female",
+  "description": "Female network television news anchor, late 40s, American. Warm, authoritative, broadcast-trained. Designed and tested via the Gold Workflow; seed 8160, preview 3 was the keeper.",
+  "model_id": "eleven_ttv_v3",
+  "voice_description": "A woman in her late 40s, American, a network television news anchor. She sits at the anchor desk under warm studio lights, an earpiece in, reading from a teleprompter a few feet away but speaking as though directly to one person at home. Broadcast-trained diction — clean, warm, authoritative without strain, every consonant landing without effort. Close lavalier microphone. Treated studio room tone, almost no reverb, the very faint sense of a control room counting in her ear. Decades of live television have made her unflappable; she can move from a hard headline to a human story without a seam. Steady, grounded, fundamentally trustworthy. She speaks to camera with the easy confidence of someone who has done ten thousand broadcasts and is not nervous about the next one.",
+  "audition_text": "Okay, are we good on camera two? Let me just check the prompter. Right, it's scrolling a touch fast — can we ease that back a little? And somebody grab me a water before we come back. We're back in ninety seconds, everyone.",
+  "seeds": [8160],
+  "loudness": 0.3,
+  "enhance_prompt": false,
+  "auto_generate_text": false,
+  "reference_audio": null,
+  "voice_settings": { "guidance_scale": 100, "volume_level": 0.0 },
+  "proven": {
+    "seed": 8160,
+    "winning_preview_index": 3,
+    "note": "Same model + seed + voice_description + audition_text + settings reproduces the same voice on any machine. The generated_voice_id changes per call and is account-specific, so it is intentionally not stored here."
+  }
+}

@@ -100,15 +100,39 @@ Every word there is true and every word is useless. The model has no room to sta
 
 ## 4. Run it
 
-Paste the SCENE into `SCENE` and the mundane crew chatter into `TEXT` in
-[`design_voice.py`](design_voice.py), then:
+This example ships as a ready-to-run preset:
+[`../presets/news-anchor.json`](../presets/news-anchor.json).
 
 ```bash
 export ELEVENLABS_API_KEY=sk-...
-python3 design_voice.py
+python3 design_voice.py --preset ../presets/news-anchor.json
 # listen to examples/runs/<timestamp>/, pick a winner, then:
 python3 design_voice.py --save <generated_voice_id> "News Anchor"
 ```
 
 Settings are already the proven configuration: `eleven_ttv_v3`, `guidance_scale: 100`
 inside `voice_settings`, `enhance_prompt: false`, no reference audio, explicit seeds.
+
+## 5. Proven configuration (reproducible)
+
+This preset was generated and auditioned for real. The keeper was **the 3rd preview of
+seed `8160`** — warm, grounded, unflappable, exactly the brief.
+
+| | |
+|---|---|
+| model | `eleven_ttv_v3` |
+| **seed** | **`8160`** |
+| guidance_scale | `100` (inside `voice_settings`) |
+| enhance_prompt | `false` |
+| reference audio | none |
+| loudness | `0.3` |
+
+Same model + seed + `voice_description` + `audition_text` + settings reproduces the same
+voice on any machine. Run it pinned to that seed:
+
+```bash
+python3 design_voice.py --preset ../presets/news-anchor.json --seeds 8160
+```
+
+The `generated_voice_id` changes on every call and is tied to your ElevenLabs account,
+so it is deliberately **not** stored in the preset. The seed is the portable fingerprint.
