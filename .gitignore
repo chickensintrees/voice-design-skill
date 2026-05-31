@@ -1,0 +1,19 @@
+# generated audio + candidates — never commit
+examples/runs/
+*.mp3
+*.wav
+*.caf
+
+# reproducibility sidecars from local runs
+*.voice_id
+*.seed
+
+# secrets — keys come from the environment, never the repo
+.env
+*.key
+config.json
+
+# os / editor
+.DS_Store
+__pycache__/
+*.pyc
