@@ -10,6 +10,7 @@ The one-line version: **the prompt is the instrument.** You don't pick a voice f
 
 - **[`SKILL.md`](SKILL.md)** — the skill itself. The Gold Workflow, the parameter rules, the words that kill voices and the words that give them life. This is the thing you install.
 - **[`examples/design_voice.py`](examples/design_voice.py)** — a self-contained, dependency-free reference implementation. Generates candidates, writes reproducibility sidecars, and saves a winner. Edit two strings and run it.
+- **[`examples/news-anchor.md`](examples/news-anchor.md)** — a fully worked SCENE + audition-text example (female news anchor, studio), including tonal variations and the trap to avoid.
 
 ## Quick start (the script)
 
