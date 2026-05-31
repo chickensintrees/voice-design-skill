@@ -1,0 +1,19 @@
+{
+  "preset_name": "Sports Play-by-Play — male",
+  "description": "Veteran male play-by-play sports broadcaster, 50s, American. Warm, resonant, lived-in gravel; relaxed conversational baseline that can lift into excitement. Designed and tested via the Gold Workflow.",
+  "model_id": "eleven_ttv_v3",
+  "voice_description": "A man in his 50s, American, a veteran play-by-play sports broadcaster. He sits in a cramped broadcast booth high above the field, headphones on, a stat sheet in front of him, leaning into a padded commentator's microphone. His voice is warm, resonant, and easy, with the lived-in gravel of decades of calling games. He can lift into excitement in an instant but mostly rides a relaxed, conversational baseline, talking to his color analyst beside him and to the fans at home like old friends. Genuine warmth, quick humor, total command of the room. Close microphone, the faint wash of a crowd far below, the booth quiet around him.",
+  "audition_text": "Alright, you got the lineup card down there? Good. They moved the kid up to second in the order, I see. Hand me that other stat sheet, would you — no, the one with the splits. And let's remember to mention the weather delay from last night before we get going.",
+  "seeds": [6048],
+  "loudness": 0.3,
+  "enhance_prompt": false,
+  "auto_generate_text": false,
+  "reference_audio": null,
+  "voice_settings": { "guidance_scale": 100, "volume_level": 0.0 },
+  "proven": {
+    "seed": 6048,
+    "winning_preview_index": 3,
+    "alternates": [{ "seed": 6048, "winning_preview_index": 1 }],
+    "note": "Seed 6048 produced both keepers (previews 3 and 1). generated_voice_id is per-call and account-specific, so it is not stored here. The seed is the portable fingerprint."
+  }
+}

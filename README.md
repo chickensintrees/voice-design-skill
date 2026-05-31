@@ -70,6 +70,9 @@ python3 examples/design_voice.py --preset presets/news-anchor.json --seeds 8160
 | Preset | Voice | Proven seed |
 |--------|-------|-------------|
 | [`news-anchor.json`](presets/news-anchor.json) | Female network news anchor, studio | `8160` |
+| [`podcast-host.json`](presets/podcast-host.json) | Female podcast host, bright & conversational | `3164` (alt `7421`) |
+| [`documentary-narrator.json`](presets/documentary-narrator.json) | British male wildlife narrator, hushed | `4915` (alt `8302`) |
+| [`sports-play-by-play.json`](presets/sports-play-by-play.json) | Veteran male sports broadcaster | `6048` |
 
 A preset stores everything needed to reproduce the voice **except** the
 `generated_voice_id` — that changes per call and is tied to your ElevenLabs account, so

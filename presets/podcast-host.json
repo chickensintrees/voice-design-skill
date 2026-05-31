@@ -1,0 +1,19 @@
+{
+  "preset_name": "Podcast Host — female",
+  "description": "Independent female podcast host, early 30s, American. Bright, warm, conversational — like a smart friend who's genuinely curious. Designed and tested via the Gold Workflow.",
+  "model_id": "eleven_ttv_v3",
+  "voice_description": "A woman in her early 30s, American, an independent podcast host. She sits in a small home studio, close to a foam-shielded microphone, headphones on, mid-conversation with a guest across the table. Her voice is bright, warm, and completely natural — like talking to a smart friend who is genuinely curious about you. She is relaxed and conversational, with an easy laugh never far away, occasionally thinking out loud and finding the thought as she speaks. Close microphone, a soft, slightly dead room, the faint creak of her chair. Intimate, unpolished, real.",
+  "audition_text": "Okay wait, before we start — do you want water or anything? There's some right there. And don't worry about the mic, just talk to me normally, I'll edit out the weird stuff. Are we good on your end? Cool. Okay, so, I've been wanting to ask you about this for ages.",
+  "seeds": [3164, 7421],
+  "loudness": 0.3,
+  "enhance_prompt": false,
+  "auto_generate_text": false,
+  "reference_audio": null,
+  "voice_settings": { "guidance_scale": 100, "volume_level": 0.0 },
+  "proven": {
+    "seed": 3164,
+    "winning_preview_index": 3,
+    "alternates": [{ "seed": 7421, "winning_preview_index": 3 }],
+    "note": "Both seeds produced a keeper. generated_voice_id is per-call and account-specific, so it is not stored here. The seed is the portable fingerprint."
+  }
+}

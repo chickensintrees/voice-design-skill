@@ -1,0 +1,22 @@
+{
+  "preset_name": "Wildlife Documentary Narrator — male, British",
+  "description": "British male wildlife documentary narrator, early 60s. Warm, hushed, intimate, unhurried — wonder held in reserve. Designed and tested via the Gold Workflow.",
+  "model_id": "eleven_ttv_v3",
+  "voice_description": "A man in his early 60s, British, a wildlife documentary narrator. He stands in a quiet, acoustically treated voiceover booth, close to a large-diaphragm microphone, a script on a stand in front of him. His voice is warm, hushed, and intimate — deep but soft, full of wonder held in reserve. He speaks slowly and deliberately, letting silences breathe, as if not wanting to disturb what he is describing. Decades of narration have given him an effortless, unhurried authority. Studio-silent room, no reverb, every breath audible. He speaks directly into the microphone, close and confiding.",
+  "audition_text": "Shall we pick it up from the top of the second paragraph? I think I rushed that last line a little. Could you play me back the bit just before the page turn? Lovely. And let me know if that page rustle came through — I'll try to be quieter on the turn this time.",
+  "seeds": [4915, 8302],
+  "loudness": 0.3,
+  "enhance_prompt": false,
+  "auto_generate_text": false,
+  "reference_audio": null,
+  "voice_settings": { "guidance_scale": 100, "volume_level": 0.0 },
+  "proven": {
+    "seed": 4915,
+    "winning_preview_index": 1,
+    "alternates": [
+      { "seed": 4915, "winning_preview_index": 3 },
+      { "seed": 8302, "winning_preview_index": 3 }
+    ],
+    "note": "Seed 4915 produced two keepers (previews 1 and 3); seed 8302 preview 3 also landed. generated_voice_id is per-call and account-specific, so it is not stored here."
+  }
+}
