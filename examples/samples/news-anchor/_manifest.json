@@ -1,0 +1,37 @@
+{
+  "preset": "News Anchor (Studio) \u2014 female",
+  "scene": "A woman in her late 40s, American, a network television news anchor. She sits at the anchor desk under warm studio lights, an earpiece in, reading from a teleprompter a few feet away but speaking as though directly to one person at home. Broadcast-trained diction \u2014 clean, warm, authoritative without strain, every consonant landing without effort. Close lavalier microphone. Treated studio room tone, almost no reverb, the very faint sense of a control room counting in her ear. Decades of live television have made her unflappable; she can move from a hard headline to a human story without a seam. Steady, grounded, fundamentally trustworthy. She speaks to camera with the easy confidence of someone who has done ten thousand broadcasts and is not nervous about the next one.",
+  "text": "Okay, are we good on camera two? Let me just check the prompter. Right, it's scrolling a touch fast \u2014 can we ease that back a little? And somebody grab me a water before we come back. We're back in ninety seconds, everyone.",
+  "params": {
+    "loudness": 0.3,
+    "enhance_prompt": false,
+    "model_id": "eleven_ttv_v3",
+    "voice_settings": {
+      "guidance_scale": 100,
+      "volume_level": 0.0
+    }
+  },
+  "candidates": [
+    {
+      "label": "cand-01-seed8160-1",
+      "seed": 8160,
+      "generated_voice_id": "fo0dr0Dcv2oxMmS4RJAL",
+      "duration_secs": 12.932458333333333,
+      "file": "cand-01-seed8160-1.mp3"
+    },
+    {
+      "label": "cand-02-seed8160-2",
+      "seed": 8160,
+      "generated_voice_id": "hqzLrZrB645BLVbEd0Nv",
+      "duration_secs": 13.245958333333334,
+      "file": "cand-02-seed8160-2.mp3"
+    },
+    {
+      "label": "cand-03-seed8160-3",
+      "seed": 8160,
+      "generated_voice_id": "jmnQ3ay5iWgSGatKA22D",
+      "duration_secs": 14.212458333333334,
+      "file": "cand-03-seed8160-3.mp3"
+    }
+  ]
+}

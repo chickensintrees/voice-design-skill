@@ -12,6 +12,8 @@ The one-line version: **the prompt is the instrument.** You don't pick a voice f
 - **[`examples/design_voice.py`](examples/design_voice.py)** — a self-contained, dependency-free reference implementation. Generates candidates, writes reproducibility sidecars, and saves a winner. Edit two strings and run it.
 - **[`examples/news-anchor.md`](examples/news-anchor.md)** — a fully worked SCENE + audition-text example (female news anchor, studio), including tonal variations and the trap to avoid.
 - **[`presets/`](presets/)** — ready-to-run voice presets as JSON, each with a proven seed. Reproducible on any machine: `python3 examples/design_voice.py --preset presets/<name>.json`.
+- **[`examples/samples/news-anchor/`](examples/samples/news-anchor/)** — real reference audio for the news-anchor preset (3 takes from seed 8160) with every sidecar, so you can hear the target and compare your own output against it.
+- **[`examples/exact-request-body.md`](examples/exact-request-body.md)** — the precise, verified `/v1/text-to-voice/design` request (endpoint, headers, full JSON body, plus a copy-paste curl). Diff your own call against it field by field.
 
 ## Quick start (the script)
 

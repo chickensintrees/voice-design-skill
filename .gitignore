@@ -1,4 +1,4 @@
-# generated audio + candidates — never commit
+# generated audio + candidates from local runs — never commit
 examples/runs/
 *.mp3
 *.wav
@@ -7,6 +7,10 @@ examples/runs/
 # reproducibility sidecars from local runs
 *.voice_id
 *.seed
+
+# ...EXCEPT the curated reference samples, which are tracked on purpose
+!examples/samples/
+!examples/samples/**
 
 # secrets — keys come from the environment, never the repo
 .env
