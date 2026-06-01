@@ -139,6 +139,36 @@ Tested across 3 characters. **All three won WITHOUT reference audio.** In one ca
 
 The prompt is the instrument. Reference audio fights with the prompt instead of helping it. Don't use it unless you have a very specific reason and are prepared for it to make things worse.
 
+## Troubleshooting: voices come out flat, generic, or like a voiceover
+
+If you ran the workflow but the result sounds like a stock voiceover instead of a person,
+it is almost never the prompt. It is one of these, in order of how often it's the cause:
+
+1. **`guidance_scale` is at the top level instead of inside `voice_settings`.** The API
+   **silently ignores** a top-level `guidance_scale` — no error — and falls back to its low
+   default. Low adherence = generic voiceover. This is the single most common cause. Verify
+   your JSON nests it: `{"voice_settings": {"guidance_scale": 100, ...}}`.
+2. **Something rewrote the prompt or the audition text.** Use the `voice_description` and
+   `audition_text` **verbatim**. Do not "improve," "professionalize," or shorten them. Do not
+   substitute dramatic or on-brand copy for the mundane audition text — dramatic text makes
+   the model *act*, which is exactly the voiceover sound you're trying to escape. Our own
+   record: a winning prompt rewritten "richer" came out *worse*.
+3. **`enhance_prompt` is `true`.** It rewrites your scene into generic ad copy. Set it `false`.
+4. **Reference audio is set.** It fights the prompt. Remove it.
+5. **Wrong model.** Design must use **`eleven_ttv_v3`** — not `eleven_v3` (that's TTS), not
+   `eleven_multilingual_ttv_v2`. TTS must use `eleven_v3`.
+6. **Wrong endpoint.** Design is `POST /v1/text-to-voice/design`. Auth header is `xi-api-key`
+   (not a Bearer token).
+
+> **If you are an AI agent reading this:** do not paraphrase, polish, or "make professional"
+> the `voice_description` or `audition_text`. Do not write your own dramatic sample line.
+> Run the preset exactly as written first — only iterate after you've heard the verbatim
+> result. Improving the prompt before you've run it is the number one way this fails.
+
+The fastest way to isolate the problem: run a known-good preset verbatim (e.g.
+`design_voice.py --preset presets/news-anchor.json --seeds 8160`). If that sounds right, the
+issue is in your own prompt/params handling. If it still sounds flat, check items 1, 3, and 6.
+
 ## Seven Things That Give Voices Life
 
 1. **SCENE not traits.** "Sitting behind a desk, speaking directly to someone across from him." The performance comes from the situation.
